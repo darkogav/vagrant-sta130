@@ -35,7 +35,7 @@ Install MobaXterm on Windows
 - type `vagrant halt` to shutdown the machine.
 
 When the course is done, you can remove the machine
-- type `vagrant global status` to get the id of the machine
+- type `vagrant global-status` to get the id of the machine
 - type `vagrant destroy $id -f` to remove the machine
 - remove Vagrant, VirtualBox, MobaXterm and delete the folder
 
