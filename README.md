@@ -32,6 +32,12 @@ Install MobaXterm on Windows
 - type `git clone https://github.com/darkogav/vagrant-sta130`
 - type `vagrant up`
 - Once the machine is ready, type `vagrant ssh` to log into the machine
+- type `vagrant halt` to shutdown the machine.
+
+When the course is done, you can remove the machine
+- type `vagrant global status` to get the id of the machine
+- type `vagrant destroy $id -f` to remove the machine
+- remove Vagrant, VirtualBox, MobaXterm and delete the folder
 
 **Resources:**
 - [ ] https://ntaback.github.io/UofT_STA130/STA130syllabus2018S.html 
