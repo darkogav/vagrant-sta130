@@ -14,6 +14,11 @@ apt-get update >>/tmp/setup.log 2>&1
 pkgs=(wget gdebi-core x11-apps x11-xserver-utils virtualbox-guest-dkms virtualbox-guest-utils virtualbox-guest-x11 r-base)
 for p in ${pkgs[@]}; do apt-get install -y ${p}; done;  >>/tmp/setup.log 2>&1
 
+# install R packages for course
+repo='http://cran.utstat.utoronto.ca'
+rpkgs=(broom ElemStatLearn fivethirtyeight ggmap gridExtra ISLR jpeg knitr mdsr mlbench modelr mosaic mosaicData NHANES openintro partykit readxl rpart rvest tidytext tidyverse)
+for rp in ${rpkgs[@]}; do R -e "install.packages('$rp', repos='$repo')"; done; >>/tmp/setup.log 2>&1
+
 # download and install R-Studio
 wget https://download1.rstudio.org/rstudio-xenial-1.1.447-amd64.deb
 echo "y" | gdebi rstudio-xenial-1.1.447-amd64.deb >>/tmp/setup.log 2>&1

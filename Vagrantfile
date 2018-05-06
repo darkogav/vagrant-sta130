@@ -8,6 +8,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.define "sta130" do |host|
     host.vm.hostname = "sta130"
+	host.vm.post_up_message = "Vagrant VM machine for STA130H1"
     host.vm.provider :virtualbox do |vb|
 	  vb.name = host.vm.hostname.to_s
 	  vb.gui = false
