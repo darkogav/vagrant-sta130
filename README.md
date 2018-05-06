@@ -25,6 +25,14 @@ Install MobaXterm on Windows
 - user: vagrant
 - password: path to private_key file. (e.g. .\.vagrant\machines\sta130\virtualbox\private_key)
 
+** Instructions **
+- make a directory on your machine. Preferably under C:\ or My Documents
+- install git, Vagrant, VirtualBox and MobaXterm
+- cd to directory
+- type `git clone https://github.com/darkogav/vagrant-sta130`
+- type `vagrant up`
+- Once the machine is ready, type `vagrant ssh` to log into the machine
+
 **Resources:**
 - [ ] https://ntaback.github.io/UofT_STA130/STA130syllabus2018S.html 
 - [ ] https://github.com/ntaback/UofT_STA130 
