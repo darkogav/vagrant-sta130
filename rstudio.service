@@ -1,0 +1,17 @@
+# /etc/systemd/system/rstudio.service
+# systemctl daemon-reload
+
+[Unit]
+Description=RStudio
+After=default.target
+
+[Service]
+User=vagrant
+Type=forking
+ExecStart=/usr/bin/rstudio
+ExecStop=/usr/bin/rstudio
+TimeoutSec=30
+
+[Install]
+WantedBy=default.target
+Alias=rstudio.service
