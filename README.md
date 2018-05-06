@@ -1,6 +1,10 @@
-  A Vagrant file for setting up a consistent local Linux environment for Stats course
-  Maintainer: Darko Gavrilovic, UofT
-  Date: May 3, 2018
+A Vagrant file for setting up a consistent local Linux environment for Stats course
+
+  
+Maintainer: Darko Gavrilovic, UofT
+
+  
+Date: May 3, 2018
 
 **OS:**
 - Ubuntu 17.10
