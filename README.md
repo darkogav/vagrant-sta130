@@ -1,22 +1,21 @@
-A Vagrant file for setting up a consistent local Linux environment for Stats course
+# A Vagrant file for setting up a consistent local Linux environment for Statistics course
 
-  
 Maintainer: Darko Gavrilovic, UofT
-
   
 Date: May 3, 2018
 
-**OS:**
+## OS
 - Ubuntu 17.10
 
-**Requirements:**
+## Requirements
+
 This solution has been tested using the below applications on Windows 10 x64
 - Vagrant v.2.1.0
 - VirtualBox v.5.1.26r117224
 - MobaXterm
 - Windows 10 Pro v.10.0.17134 N/A Build 17134
 
-**Applications:**
+## Applications
 - R
 - R-Studio
 - R packages
@@ -29,7 +28,7 @@ Install MobaXterm on Windows
 - user: vagrant
 - password: path to private_key file. (e.g. .\.vagrant\machines\sta130\virtualbox\private_key)
 
-** Instructions **
+## Instructions 
 - make a directory on your machine. Preferably under C:\ or My Documents
 - install git, Vagrant, VirtualBox and MobaXterm
 - cd to directory
@@ -43,7 +42,7 @@ When the course is done, you can remove the machine
 - type `vagrant destroy $id -f` to remove the machine
 - remove Vagrant, VirtualBox, MobaXterm and delete the folder
 
-**Resources:**
+## Resources
 - [ ] https://ntaback.github.io/UofT_STA130/STA130syllabus2018S.html 
 - [ ] https://github.com/ntaback/UofT_STA130 
 
